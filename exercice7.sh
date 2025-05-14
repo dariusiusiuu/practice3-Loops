@@ -5,7 +5,7 @@ options=("rock" "paper" "scissors")
 while true; do
     user_choice=""
 
-    until [[ "$user_choice" =~ ^(rock|paper|scissors)$ ]]; do
+    until [[ "$user_choice" =~ (rock|paper|scissors) ]]; do
         read -p "Enter your choice (rock, paper, or scissors): " user_choice
     done
 
