@@ -23,7 +23,7 @@ while true; do
     fi
 
     play_again=""
-    until [[ "$play_again" =~ ^(y|n)$ ]]; do
+    until [[ "$play_again" =~ (y|n) ]]; do
         read -p "Do you want to play again? (y/n): " play_again
     done
 
